@@ -1,3 +1,3 @@
-module github.com/shideqin/leakybuffer
+module leakybuffer
 
 go 1.16

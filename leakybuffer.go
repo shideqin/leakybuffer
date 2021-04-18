@@ -12,7 +12,7 @@ type LeakyBuffer struct {
 }
 
 // NewLeakyBuffer creates a new BufferPool bounded to the given size.
-func NewLeakyBuffer(size, alloc int) (lb *LeakyBuffer) {
+func NewLeakyBuffer(size, alloc int) *LeakyBuffer {
 	return &LeakyBuffer{
 		c: make(chan *bytes.Buffer, size),
 		a: alloc,
